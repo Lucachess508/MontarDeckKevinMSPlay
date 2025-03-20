@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clash Royale Deck Creator</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div class="deck">
+        <div class="row">
+            <div class="slot" onclick="adicionarRemoverBotao(this)">
+                <div class="placeholder"></div>
+            </div>
+            <div class="slot" onclick="adicionarRemoverBotao(this)">
+                <div class="placeholder"></div>
+            </div>
+            <div class="slot" onclick="adicionarRemoverBotao(this)">
+                <div class="placeholder"></div>
+            </div>
+            <div class="slot" onclick="adicionarRemoverBotao(this)">
+                <div class="placeholder"></div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="slot" onclick="adicionarRemoverBotao(this)">
+                <div class="placeholder"></div>
+            </div>
+            <div class="slot" onclick="adicionarRemoverBotao(this)">
+                <div class="placeholder"></div>
+            </div>
+            <div class="slot" onclick="adicionarRemoverBotao(this)">
+                <div class="placeholder"></div>
+            </div>
+            <div class="slot" onclick="adicionarRemoverBotao(this)">
+                <div class="placeholder"></div>
+            </div>
+        </div>
+    </div>
+    <div id="copyDeckButton" class="copy-button" style="display: none;">
+        <button class="animated-btn" onclick="copiarDeck()">Copiar Deck para Clash Royale</button>
+    </div>
+    <div class="filtros">
+        <button class="animated-btn" onclick="filtrarCartas('ciclo')">Cartas de Ciclo</button>
+        <button class="animated-btn" onclick="filtrarCartas('feitico')">Feitiços</button>
+        <button class="animated-btn" onclick="filtrarCartas('condicao_vitoria')">Condições de Vitória</button>
+        <button class="animated-btn" onclick="filtrarCartas('suporte')">Cartas de Suporte</button>
+        <button class="animated-btn" onclick="filtrarCartas('todas')">Todas as Cartas</button>
+    </div>
+    <div id="cartas" class="cartas">
+        <!-- Cartas aparecerão aqui -->
+    </div>
+    <div class="deck-container">
+    <div class="deck">
+        <div class="slot"><div class="placeholder"></div></div>
+        <div class="slot"><div class="placeholder"></div></div>
+        <div class="slot"><div class="placeholder"></div></div>
+        <div class="slot"><div class="placeholder"></div></div>
+        <div class="slot"><div class="placeholder"></div></div>
+        <div class="slot"><div class="placeholder"></div></div>
+        <div class="slot"><div class="placeholder"></div></div>
+        <div class="slot"><div class="placeholder"></div></div>
+    </div>
+    <!-- Botões serão adicionados dinamicamente aqui -->
+</div>
+
+
+    <script src="js/scripts.js"></script>
+</body>
+</html>
