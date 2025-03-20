@@ -1,0 +1,117 @@
+body {
+    background-color: #4B0082;
+    color: white;
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+.deck {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px 0;
+}
+
+.row {
+    display: flex;
+}
+
+.slot {
+    margin: 5px;
+    padding: 20px;
+    background-color: #8A2BE2;
+    border-radius: 5px;
+    position: relative;
+    width: 100px;
+    height: 150px;
+}
+
+.placeholder {
+    width: 100%;
+    height: 100%;
+    background-color: #D3D3D3;
+    border: 2px dashed #FFD700;
+    border-radius: 5px;
+}
+
+.slot img {
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+    object-fit: contain;
+    cursor: pointer;
+    transition: transform 0.2s ease-in-out;
+}
+
+    .slot img:hover {
+        transform: scale(1.1);
+    }
+
+.carta {
+    margin: 10px;
+    background-color: #6A0DAD;
+    padding: 10px;
+    border-radius: 5px;
+    display: inline-block;
+    transition: transform 0.2s ease-in-out;
+}
+
+    .carta img {
+        width: 100px;
+        height: 150px;
+        object-fit: contain;
+        transition: transform 0.2s ease-in-out;
+    }
+
+        .carta img:hover {
+            transform: translateY(-10px);
+        }
+
+.animated-btn {
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #FFD700; /* Amarelo */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.2s, transform 0.2s;
+    box-shadow: inset 2px 2px 5px rgba(255, 255, 255, 0.6), /* Parte superior clara */
+    inset -2px -2px 5px rgba(0, 0, 0, 0.2); /* Parte inferior escura */
+}
+
+    .animated-btn:hover {
+        background-color: #FFC107; /* Amarelo mais escuro ao passar o mouse */
+        transform: scale(1.1); /* Leve aumento */
+    }
+
+    .animated-btn:active {
+        box-shadow: inset -2px -2px 5px rgba(255, 255, 255, 0.6), /* Parte inferior clara */
+        inset 2px 2px 5px rgba(0, 0, 0, 0.2); /* Parte superior escura */
+        transform: scale(0.95); /* Leve contração ao clicar */
+    }
+
+.copy-button {
+    margin-top: 20px;
+}
+
+button.animated-btn {
+    padding: 10px 15px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #FFD700;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    margin: 10px 5px;
+    transition: background-color 0.3s ease;
+    box-shadow: inset 2px 2px 5px rgba(255, 255, 255, 0.6), /* Parte superior clara */
+    inset -2px -2px 5px rgba(0, 0, 0, 0.2); /* Parte inferior escura */
+}
+
+    button.animated-btn:hover {
+        background-color: #FFC107;
+    }
+
+#removerTodasButton {
+    display: inline-block;
+}
